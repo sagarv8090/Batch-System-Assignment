@@ -1,0 +1,1053 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #000000;
+  }
+  
+  .nav-links li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width 0.3s;
+    margin: auto;
+  }
+  
+  .nav-links li:hover::after {
+    width: 100%;
+  }
+  
+  .black-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .black-btn:hover {
+    background-color: #2d2e2d;
+    transform: scale(1.05);
+  }
+  
+    /* Media Queries */
+  /* Large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Add styles for large screens here */
+  }
+  
+  /* Medium screens (Laptops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Add styles for medium screens here */
+    .nav-links {
+      gap: 15px;
+    }
+    .nav-links li a {
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Small screens (Tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Add styles for small screens here */
+    .nav-links {
+      gap: 10px;
+    }
+    .nav-links li a {
+      padding: 4px 8px;
+    }
+    .black-btn {
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Extra small screens (Mobiles) */
+  @media only screen and (max-width: 767px) {
+    /* Add styles for extra small screens here */
+    /* .nav {
+      flex-direction: column;
+    } */
+    /* .nav-links {
+      flex-direction: column;
+      gap: 5px;
+    } */
+    .nav-links li a {
+      padding: 2px 5px;
+    }
+    .black-btn {
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Portrait mode (Mobiles) */
+  @media only screen and (max-width: 480px) and (orientation: portrait) {
+    /* Add styles for portrait mode here  */
+      .nav {
+      /* flex-direction: column; */
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-right: 0;
+    }
+    .nav-links {
+      /* flex-direction: column; */
+      gap: 5px;
+    }
+    .nav-links {
+      gap: 3px;
+    }
+    .nav-links li a {
+      padding: 1px 3px;
+    }
+    .black-btn {
+      padding: 3px 6px;
+    }
+  }
+  
+  /* Landscape mode (Mobiles) */
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+    /* Add styles for landscape mode here */
+    .nav-links {
+      gap: 5px;
+    }
+    .nav-links li a {
+      padding: 2px 5px;
+    }
+    .black-btn {
+      padding: 5px 10px;
+    }
+  }
+
+  
+  /* Hero Section Styles */
+  .hero {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    margin-left: 80px;
+  }
+  .circle-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; /* Adjust the size as needed */
+    height: 2px; /* Adjust the size as needed */
+    background-color: #f62a2a; /* Red background color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 110px 80px rgb(255, 0, 0); /* Add shadow */
+    z-index: -1; /* Push it behind the text */
+  }
+  
+  .hero-text {
+    position: relative; /* Ensure proper positioning */
+    z-index: 1;
+    max-width: 500px;
+  }
+  
+  .hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;;
+  }
+  
+  .hero-text p {
+    color: #666;
+  }
+  
+  .hero-buttons{
+    margin-top: 30px;
+  }
+  .learnMore{
+    margin-left: 20px;
+    background-color: #f0e9e9;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .learnMore:hover {
+    background-color: #e4e6e4;
+    transform: scale(1.05);
+  }
+  .hero-image {
+    position: relative;
+    width: 600px; /* Set a fixed width for the container */
+    height: 800px; /* Set a fixed height for the container */
+  }
+
+  .image-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .stack-image {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 1; /* Adjust opacity for a slight shadow effect */
+  }
+  
+  .stack-image.top {
+    z-index: 4;
+    opacity: 1; /* Fully opaque for the top image */
+  }
+  
+  .stack-image.middle {
+    z-index: 3;
+    top: 100px;
+    left: 100px;
+  }
+  
+  .stack-image.bottom {
+    z-index: 2;
+    top: 200px;
+    left: 200px;
+  }
+  .stack-image.ellipse{
+    top:30px;
+    left:60px;
+  }
+  
+  .circle-container-iphone {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; /* Adjust the size as needed */
+    height: 2px; /* Adjust the size as needed */
+    background-color: #f62a2a; /* Red background color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 110px 80px rgb(255, 0, 0); /* Add shadow */
+    z-index: -1; /* Push it behind the text */
+  }
+
+  /* Media Queries */
+
+/* Large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Add styles for large screens here */
+  }
+  
+  /* Medium screens (Laptops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+   .hero {
+      width: 900px;
+    }
+   .hero-image {
+      width: 500px;
+      height: 600px;
+    }
+    .hero-text img{
+        width: 400px;
+      height: 500px;
+    }
+   .hero-text {
+      max-width: 400px;
+    }
+   .hero-text h1 {
+      font-size: 36px;
+    }
+  }
+  
+  /* Small screens (Tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+   .hero {
+      width: 700px;
+    }
+   .hero-image {
+      width: 400px;
+      height: 500px;
+    }
+    .hero-text img{
+        width: 300px;
+      height: 400px;
+    }
+   .hero-text {
+      max-width: 300px;
+    }
+   .hero-text h1 {
+      font-size: 28px;
+    }
+  }
+  
+  /* Extra small screens (Mobiles) */
+  @media only screen and (max-width: 767px) {
+   .hero {
+      flex-direction: column;
+      width: 100%;
+      padding-left: 20px;
+      margin-left: 0;
+    }
+   .hero-image {
+      width: 300px;
+      height: 300px;
+    }
+    .hero-text img{
+        width: 300px;
+      height: 400px;
+    }
+  .hero-text {
+      max-width: 100%;
+    }
+  .hero-text h1 {
+      font-size: 20px;
+    }
+   .circle-container {
+      top: 20%;
+      left: 40%;
+    }
+   .circle-container-iphone {
+      top: 60%;
+      left: 40%;
+    }
+  }
+  
+  /* Portrait mode (Mobiles) */
+  @media only screen and (max-width: 480px) and (orientation: portrait) {
+   .hero-image {
+      width: 250px;
+      height: 300px;
+    }
+    .hero-text img{
+        width: 250px;
+      height: 300px;
+    }
+   .hero-text h1 {
+      font-size: 16px;
+    }
+  }
+  
+  /* Landscape mode (Mobiles) */
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+   .hero-image {
+      width: 350px;
+      height: 450px;
+    }
+    .hero-text img{
+        width: 350px;
+      height: 450px;
+    }
+   .hero-text h1 {
+      font-size: 18px;
+    }
+  }
+  
+/* Feature Section Styles */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .feature-items {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: left;
+  }
+  
+  .features h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .feature-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature-text h3 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .feature-image {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .feature-image .ellipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+  
+  .feature-image .phone {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .circle-container-features {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 2px;
+    background-color: #f62a2a;
+    border-radius: 50%;
+    box-shadow: 0 0 110px 100px rgb(255, 0, 0);
+    z-index: 0;
+  }
+
+  /* Media Queries */
+
+/* Large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Add styles for large screens here */
+  }
+  
+  /* Medium screens (Laptops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .features {
+      padding: 30px;
+    }
+    .feature-items {
+      max-width: 400px;
+    }
+    .feature-image {
+      max-width: 400px;
+    }
+  }
+  
+  /* Small screens (Tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .features {
+      padding: 20px;
+    }
+    .feature-items {
+      max-width: 300px;
+    }
+    .feature-image {
+      max-width: 300px;
+    }
+  }
+  
+  /* Extra small screens (Mobiles) */
+  @media only screen and (max-width: 767px) {
+    .features {
+      padding: 10px;
+    }
+    .feature-items {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    .feature-image {
+      max-width: 100%;
+    }
+    .circle-container-features {
+      top: 70%;
+      left: 50%;
+    }
+  }
+  
+  /* Portrait mode (Mobiles) */
+  @media only screen and (max-width: 480px) and (orientation: portrait) {
+    .features {
+      padding: 10px;
+    }
+    .feature-items {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    .feature-image {
+      max-width: 100%;
+    }
+    .circle-container-features {
+      top: 70%;
+      left: 50%;
+    }
+  }
+  
+  /* Landscape mode (Mobiles) */
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+    .features {
+      padding: 20px;
+    }
+    .feature-items {
+      max-width: 300px;
+    }
+    .feature-image {
+      max-width: 300px;
+    }
+    .circle-container-features {
+      top: 70%;
+      left: 50%;
+    }
+  }
+
+
+
+/* Testimonial Section Styles */
+.testimonial {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+    position: relative; /* Ensure the section itself is positioned relatively */
+  }
+  
+  .testimonial-text {
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-text p {
+    color: #f06262;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #testimonial-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; /* Ensure this container is positioned relatively */
+  }
+  
+  .testimonial-image {
+    flex: 1;
+    padding: 10px;
+    position: relative; /* Ensure the image is positioned relatively */
+  }
+  
+  .testimonial-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative; /* Ensure the image is positioned relatively */
+    z-index: 1; /* Make sure the image is on top */
+  }
+  
+  .circle-container-testimonial {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 2px; /* Adjust the size as needed */
+    height: 2px; /* Adjust the size as needed */
+    background-color: #f62a2a; /* Red background color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 110px 80px rgb(255, 0, 0); /* Add shadow */
+    z-index: 0; /* Push it behind the image */
+  }
+  
+  #testimonial-items-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .testimonial-item .customizable-image img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .testimonial-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-item cite {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  /* Media Queries */
+
+/* Extra Large Screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+  .testimonial-content {
+    flex-wrap: nowrap;
+  }
+  .testimonial-image {
+    flex: 0 0 30%;
+  }
+  #testimonial-items-container {
+    flex: 0 0 70%;
+  }
+}
+
+/* Large Screens (Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-content {
+    flex-wrap: nowrap;
+  }
+  .testimonial-image {
+    flex: 0 0 25%;
+  }
+  #testimonial-items-container {
+    flex: 0 0 75%;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-content {
+    flex-wrap: wrap;
+  }
+  .testimonial-image {
+    flex: 0 0 40%;
+  }
+  #testimonial-items-container {
+    flex: 0 0 60%;
+  }
+}
+
+/* Small Screens (Smartphones) */
+@media only screen and (max-width: 767px) {
+  .testimonial-content {
+    flex-wrap: wrap;
+  }
+  .testimonial-image {
+    flex: 0 0 100%;
+  }
+  #testimonial-items-container {
+    flex: 0 0 100%;
+  }
+  .testimonial-item {
+    padding: 10px;
+  }
+}
+
+/* Extra Small Screens (Small Smartphones) */
+@media only screen and (max-width: 479px) {
+  .testimonial-content {
+    flex-wrap: wrap;
+  }
+  .testimonial-image {
+    flex: 0 0 100%;
+  }
+  #testimonial-items-container {
+    flex: 0 0 100%;
+  }
+  .testimonial-item {
+    padding: 5px;
+  }
+}
+
+ /* Pricing Section Styles */
+#pricing-section {
+    display: flex;
+    text-align: center;
+  }
+  
+  .pricing-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  
+  #pricing-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  #pricing-plans-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pricing-plan {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .pricing-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .pricing-plan p {
+    font-size: 20px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-plan ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-plan ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pricing-plan ul li:before {
+    content: "✔";
+    color: #4caf50;
+    margin-right: 10px;
+  }
+  
+  .pricing-image img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 100px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+
+/* Media Queries */
+  
+  /* Large Screens (Desktops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #pricing-plans-container {
+      justify-content: space-between;
+    }
+   .pricing-plan {
+      max-width: 220px;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #pricing-plans-container {
+      flex-wrap: wrap;
+    }
+   .pricing-plan {
+      max-width: 300px;
+    }
+  }
+  
+  /* Small Screens (Smartphones) */
+  @media only screen and (max-width: 767px) {
+    #pricing-plans-container {
+      flex-wrap: wrap;
+    }
+   .pricing-plan {
+      max-width: 100%;
+    }
+   .pricing-image img {
+      margin-right: 20px;
+    }
+  }
+  
+  /* Extra Small Screens (Small Smartphones) */
+  @media only screen and (max-width: 479px) {
+    #pricing-plans-container {
+      flex-wrap: wrap;
+    }
+   .pricing-plan {
+      max-width: 100%;
+    }
+   .pricing-image img {
+      margin-right: 10px;
+    }
+  }
+
+
+/*contact section*/
+.container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  #contact-us {
+    padding: 50px 0;
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+  }
+  
+  #contact-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Media Queries */
+
+/* Extra Large Screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  /* Large Screens (Desktops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      width: 85%;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Small Screens (Smartphones) */
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 95%;
+    }
+  }
+  
+  /* Extra Small Screens (Small Smartphones) */
+  @media only screen and (max-width: 479px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+
+  /* Footer Styles */
+
+footer {
+    padding: 50px;
+  }
+  
+  .footerSection {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ul-item{
+    font-weight: bold; /* Make <ul> items bold */
+    font-size: 20px;
+  }
+  
+  .footerSection ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    font-weight: normal;
+    font-size:15px;
+  }
+  .footerSection ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footerSection ul li img {
+    width: 20px; /* Adjust icon width */
+    height: 20px; /* Adjust icon height */
+    margin-right: 10px; /* Add spacing between icon and text */
+    vertical-align: middle; /* Align the icons vertically */
+  }
+  
+  .footerSection input[type="email"] {
+    padding: 8px;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+
+   /* Large Screens (Desktops) */
+   @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footerSection {
+       flex-wrap: wrap;
+     }
+    .footerSection ul {
+       width: 40%;
+     }
+   }
+   
+   /* Medium Screens (Tablets) */
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footerSection {
+       flex-direction: column;
+     }
+    .footerSection ul {
+       width: 100%;
+     }
+   }
+   
+   /* Small Screens (Smartphones) */
+   @media only screen and (max-width: 767px) {
+    .footerSection {
+       flex-direction: column;
+     }
+    .footerSection ul {
+       width: 100%;
+     }
+    .footerSection ul li {
+       font-size: 12px;
+     }
+    .footerSection ul li img {
+       width: 15px;
+       height: 15px;
+     }
+   }
+   
+   /* Extra Small Screens (Small Smartphones) */
+   @media only screen and (max-width: 479px) {
+    .footerSection {
+       flex-direction: column;
+     }
+    .footerSection ul {
+       width: 100%;
+     }
+    .footerSection ul li {
+       font-size: 10px;
+     }
+    .footerSection ul li img {
+       width: 10px;
+       height: 10px;
+     }
+   }

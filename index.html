@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uifry</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <header>
+            <nav class="nav">
+              <div class="navItems">
+                <ul class="nav-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#footer">About Us</a></li>
+                  <li><a href="#pricing-section">Pricing</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+              </div>
+              <button class="black-btn">Download</button>
+            </nav>
+          </header>
+    <main>
+
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <div class="circle-container"></div>
+          <h1 id="hero-headline"></h1>
+          <p id="hero-subheadline"></p>
+          <div class="hero-buttons">
+            <button class="black-btn">Download Now</button>
+            <button class="learnMore">Learn More</button>
+          </div>
+          <img src="/images/Group 35924.png" alt="Hero Image" />
+        </div>
+        <div class="hero-image">
+          <div class="image-stack">
+            <img
+              class="stack-image top"
+              src="/images/iPhone-13-Pro-Front.png"
+              alt="Phones"
+            />
+            <img
+              class="stack-image middle"
+              src="/images/iPhone-13-Pro-Front (1).png"
+              alt="Phones"
+            />
+            <img
+              class="stack-image bottom"
+              src="/images/iPhone-13-Pro-Front.png"
+              alt="Phones"
+            />
+            <img
+              class="stack-image ellipse"
+              src="/images/Group 35887.png"
+              alt="ellipse"
+            />
+            <div class="circle-container-iphone"></div>
+          </div>
+        </div>
+      </section>
+
+<!-- Feature Section -->
+<section class="features" id="features">
+    <div class="feature-image">
+      <div class="circle-container-features"></div>
+      <img class="ellipse" src="/images/Group 35887.png" alt="Ellipse" />
+      <img class="phone" src="/images/iPhone-13-Pro-Front (2).png" alt="Phone" />
+    </div>
+    <div class="feature-items">
+      <h1>Features</h1>
+      <div class="feature-text">
+        <div id="feature-items-container"></div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Testimonial section -->
+<section class="testimonial" >
+    <div class="testimonial-text">
+      <p>TESTIMONIAL</p>
+      <h2 id="testimonial-title">What Our Users Say About Us?</h2>
+    </div>
+    <div class="testimonial-content">
+      <div class="circle-container-testimonial"></div> <!-- Added circle-container-testimonial here -->
+      <div class="testimonial-image">
+        <img src="/images/Group 1000002332.png" alt="Testimonial Image">
+      </div>
+      <div id="testimonial-items-container"></div>
+    </div>
+  </section>
+  
+
+<!-- Pricing section -->
+<section id="pricing-section" id="pricing-section">
+    <div class="pricing-text">
+      <h1>Pricing Plans</h1>
+      <div id="pricing-plans-container"></div>
+    </div>
+    <div class="pricing-image">
+      <img src="/images/iPhone-13-Pro-Front (2).png" alt="App Screenshot" />
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact-us">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" method="post" action="send_message.php">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="black-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  
+<!-- footer section -->
+      <footer id="footer">
+        <div class="footerSection" >
+          <div>
+            <ul class="ul-item">Batch System
+                <li>
+                  <img src="/images/mail.png" alt="Mail Icon">
+                  <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                </li>
+                <li>
+                  <img src="/images/contact.png" alt="Contact Icon">
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </li>
+              </ul>
+              
+          </div>
+          <div>
+            <ul class="ul-item">
+              Links
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Bookings</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ul-item">
+              Legal
+              <li>Terms Of Use</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ul-item">
+              Product
+              <li>Take Tour</li>
+              <li>Live Chat</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ul-item">
+              Newsletter
+              <li>Stay Up To Date</li>
+              <li>
+                <input type="email" placeholder="Your Email" />
+                <button class="black-btn">Subscribe</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2024 Batch-System.Com All Rights Reserved</p>
+        </div>
+      </footer>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
